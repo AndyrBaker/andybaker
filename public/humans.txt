@@ -1,0 +1,18 @@
+# TEAM
+
+	Jacob White -- emaildocs creator
+	Glenn LaBarre -- emaildocs curator
+
+# THANKS
+
+	Jenny Payne -- project facilitator
+	Ehren Coker -- team direction
+
+# TECHNOLOGY COLOPHON
+
+	HTML5 | h5bp | chromium
+	CSS3 | less | Normalize.css
+	jQuery | Modernizr
+	w3c | google
+	github | heroku
+	http://designmodo.github.io/Flat-UI/

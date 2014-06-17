@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" id="index"> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" id="index"> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" id="index"> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" id="index"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="robots" content="noindex, nofollow">
+		<title>emaildocs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link href="http://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="master.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if IE]><p class="browsehappy">Emaildocs does not support <strong>Internet Explorer</strong>. Please consider using <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a> to improve your experience.</p><![endif]-->
+
+<div class="content">
+<!-- START content -->
+
+<img class="hero" src="img/hero/logo.png">
+
+<h1>emaildocs</h1>
+
+<div class="portal live">
+	<a href="tool/frameSelection/">
+		<img src="img/icon/small/build.png">
+		<p>select a frame</p>
+	</a>
+</div>
+
+<div class="portal beta">
+	<a href="tool/framer/">
+		<img src="img/icon/small/public.png">
+		<p>build a frame<br><strong>(beta)</strong></p>
+	</a>
+</div>
+
+<div class="portal d2c">
+	<a href="/tool/linter/">
+		<img src="img/icon/small/develop.png">
+		<p>check your code</p>
+	</a>
+</div>
+
+<div class="portal d2c">
+	<a href="/tool/assembler/">
+		<img src="img/icon/small/element.png">
+		<p>assemble an asset</p>
+	</a>
+</div>
+
+<div class="portal d2c">
+	<a href="/tool/couponer/">
+		<img src="img/icon/small/merchandising.png">
+		<p>assemble a coupon</p>
+	</a>
+</div>
+
+<div class="portal d2c">
+	<a href="/tool/barcoder/">
+		<img src="img/icon/small/barcode.png">
+		<p>assemble a barcode</p>
+	</a>
+</div>
+
+<div class="portal live">
+	<a href="tool/bookmarklets/">
+		<img src="img/icon/small/book.png">
+		<p>find a bookmarklet</p>
+	</a>
+</div>
+
+<!-- END content -->
+</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+<script type="text/javascript">
+
+if (/d2c/.test(window.location.hash) === true) {
+	$('.d2c').show();
+	$('.beta').hide();
+} else {
+	$('.d2c').hide();
+}
+
+if(/beta/.test(window.location.hash) === true) {
+	$('.beta').show();
+	$('.d2c').hide();
+	$('.live').hide();
+} else {
+	$('.beta').hide();
+}
+
+</script>
+
+	</body>
+</html>

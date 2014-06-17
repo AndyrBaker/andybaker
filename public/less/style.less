@@ -1,0 +1,439 @@
+/* styles */
+
+//	grid
+
+//	media queries
+@media:		~"@media";
+@skinny:	~"screen and (min-width: 1px) and (max-width: 479px)";
+@wide:		~"screen and (min-width: 480px) and (max-width: 959px)";
+@wider:		~"screen and (min-width: 960px) and (max-width: 1119px)";
+@widest:	~"screen and (min-width: 1120px)";
+
+//	reset
+
+//	structure
+body {
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+//	structure : index
+#index {
+	.content {
+		text-align: center;
+		width: 100%;
+
+	}
+}
+
+//	structure : markdown
+#markdown {
+	height: 100%;
+	body {
+		height: 100%;
+	}
+	.content {
+		max-width: 960px;
+		height: 100%;
+		margin: 0 auto;
+		padding: 14px;
+		blockquote {
+			margin: 0;
+			padding: 0 14px;
+			border: 1px @cGrey solid;
+		}
+		pre {
+			padding: 1em;
+		}
+		img {
+			display: block;
+			width: 96%;
+			max-width: 500px;
+			margin: 2% auto;
+			padding: 2%;
+		}
+		* {
+			line-height: normal;
+		}
+	}
+}
+
+//	structure : assembly
+#assembly {
+	.boxsizingBorder {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	input, textarea {
+		.boxsizingBorder;
+	}
+	.content {
+		padding: 1em;
+		position: relative;
+		#instructions, #input, #display {
+			max-width: 40%;
+			width: 100%;
+			min-width: 320px;
+			display: block;
+			margin: 0;
+			padding: 0 1em;
+		}
+		#display {
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			height: 100%;
+			border-left: 1px @cGrey solid;
+			background: @cBase;
+			h3 {
+				border-bottom: 1px @cGrey solid;
+				text-transform: uppercase;
+			}
+			overflow: scroll;
+			#title {
+				h2 {
+					color: @cAlert;
+					text-transform: uppercase;
+				}
+			}
+		}
+		#instructions, #input {
+			h3 {
+				border-bottom: 1px @cGrey solid;
+				text-transform: uppercase;
+			}
+			.remove {				
+				.button;
+				display: inline-block;
+				padding: .6em;
+			}
+			.remove:hover {
+				.buttonActive;
+			}
+		}
+		#input {
+			label, select, input, textarea {
+				display: auto;
+				width: 100%;
+				margin: 1em 0;
+			}
+			select, input, textarea {
+				border: 1px @cGrey solid;
+				padding: .4em;
+			}
+			input[type="radio"], input[type="checkbox"] {
+				display: inline-block;
+				width: auto;
+				margin-right: 1em;
+				margin-bottom: 0;
+			}
+			textarea {
+				min-height: 40px;
+				height: 100px;
+				max-height: 100%;
+			}
+			select {
+				font-size: 1.1em;
+			}
+			#linter {
+				font-family:'menlo','courier new',courier,monospace;
+				background: @cDark;
+				color: @cBase;
+				min-height: 400px;
+			}
+		}
+		#output {
+			height: 100%;
+			textarea {
+				display: block;
+				width: 100%;
+				height: 100%;
+				margin-bottom: 1em;
+				padding: 1em;
+				background: @cAlert;
+				color: #fff;
+				font: normal .7em/1.3em "Menlo", monospace;
+				overflow: scroll;
+			}
+		}
+		#preview, #output {
+			background: @cBase;
+			margin-bottom: 1em;
+		}
+		#preview {
+			.alert, .success {
+				border-bottom: 1px #ddd solid;
+				padding: 0 0 1em 0;
+				margin: 0 0 1em 0;
+				p {
+					display: block;
+					text-align: left;
+					padding: 0 0 1em 0;
+				}
+				strong {
+					color: @cRed;
+				}
+				img {
+					margin: 0 auto;
+					max-width: 320px;
+					width: 100%;
+					display: block;
+					padding: 0 0 1em 0;
+				}
+			}
+			.success strong {
+				color: @cAlert !important;
+			}
+			iframe {
+				min-height: 100%;
+				width: 100% !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				border: 0 none !important;
+				html {
+				width: 100% !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				border: 0 none !important;
+					body {
+				width: 100% !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				border: 0 none !important;
+					}
+				}
+			}
+		}
+
+		//	for famous coupon builder passbook small show
+		.small {
+				display: block !important;
+				max-height: 189px !important;
+				font-size: 14px !important;
+		}
+
+	}
+}
+
+//	structure : topBar
+.topBar {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+	text-align: left;
+	a {
+		display: block;
+	}
+	a {
+		h1 {
+			margin-left: 1em;
+			padding-left: 32px;
+			background: no-repeat url("img/icon/tiny/logo.png");
+			background-position: left center;
+			.transition(.3s);
+		}
+	}
+	a:active, a:hover, a:focus {
+		h1 {
+			background: no-repeat url("img/icon/tiny/home.png");
+			background-position: left center;
+			.transition(.3s);
+		}
+	}
+}
+
+//	structure : browsehappy
+.browsehappy {
+	text-align: center;
+	padding: 1em;
+	background-color: @cBadge;
+	color: @cBase;
+	a, a:link, a:visited, a:active, a:hover, a:focus {
+		color: @cBase;
+		text-decoration: underline;
+	}
+}
+
+//	structure : button
+.button {
+	background: @cBase;
+	color: @cCopy;
+	border: 1px @cBackground solid;
+	border-bottom: 4px @cBackground solid;
+	.buttonRadius(8px);
+}
+.buttonActive {
+	background: @cBackground;
+	color: @cBase;
+}
+
+//	structure : portal
+.portal {
+	vertical-align: top;
+	display: inline-block;
+	a, a:link, a:visited {
+		display: inline-block;
+		width: 200px;
+		margin: 1em;
+		padding: 1em;
+		.button;
+	}
+	a:active, a:hover, a:focus {
+		.buttonActive;
+	}
+}
+
+//	structure : bookmarklets
+.bookmarklets {
+	a {
+		display: inline-block;
+		.button;
+		margin: 0 1em 0 0;
+		padding: 1em;
+	}
+}
+
+//	font
+@fBase		: "Avenir Next", "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@fAlt		: "Poiret One", Helvetica, Arial, sans-serif;
+body {
+	font-family: @fBase;
+}
+
+//	font : topBar
+.topBar {
+	font-family: @fAlt;
+	text-transform: uppercase;
+	h1 {
+		font-size: 1.4em;
+	}
+}
+#index {
+	h1 {
+		font-family: @fAlt;
+		text-transform: uppercase;
+	}
+}
+
+//	font : blockquote
+blockquote {
+	font-style: italic;
+}
+
+//	color
+@cBase			: #fff;
+@cCopy			: #1a1a1a;
+@cLink			: #3498db;
+@cHover			: #2980b9;
+@cBackground	: #34495e;
+@cDark			: #1a1a1a;
+@cGrey			: #ddd;
+@cAlert			: #77a3d6;
+@cBadge			: #e74c3c;
+@cRed			: #b20303;
+
+//	color : background
+html,body {
+	background: @cBase;
+}
+
+//	color : copy
+html,body {
+	color: @cCopy;
+}
+
+//	links
+a, a:link, a:visited {
+	text-decoration: none;
+	color: @cLink;
+}
+a:active, a:hover, a:focus {
+	text-decoration: none;
+	color: @cHover;
+}
+
+//	color : topBar
+.topBar {
+	background: @cBase;
+	border-bottom: 3px @cBase solid;
+	a {
+		border: 1px @cGrey solid;
+	}
+	a, a:link, a:visited {
+		text-decoration: none;
+		color: @cCopy;
+	}
+	a:active, a:hover, a:focus {
+		text-decoration: none;
+		color: @cCopy;
+	}
+}
+
+//	color : user
+::selection {
+	color: @cBase;
+	background: @cCopy;
+}
+::-moz-selection {
+	color: @cCopy;
+	background: @cBase;
+}
+
+//	theme
+#markdown {
+
+	//	theme : light
+	.content {
+		border-right: 1px @cGrey solid;
+		border-left: 1px @cGrey solid;
+		* {
+			color: @cDark;
+		}
+		h2 {
+			border-bottom: 2px @cDark solid;
+		}
+		pre {
+			background: @cGrey;
+		}
+	}
+	.content img {
+		border: 1px @cGrey solid;
+	}
+
+}
+
+//	print
+@media print {
+	body {
+		padding-top: 1em;
+	}
+	.topBar {
+		display: none;
+	}
+	.content {
+		border: 0 none;
+	}
+}
+
+//	ie
+.lt-ie9 {
+	body {
+		* {
+			display: none;
+		}
+		.browsehappy {
+			display: block;
+			* {
+				display: inline-block;
+			}
+		}
+	}
+}
