@@ -7,7 +7,7 @@ body {
   margin: 0 auto; }
 
 body {
-  font-family: "Avenir Next", "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif; }
 
 html, body {
   background: #fff; }
@@ -31,53 +31,7 @@ a:active, a:hover, a:focus {
   color: #1a1a1a;
   background: #fff; }
 
-@media print { }
-
-.lt-ie9 body * {
-  display: none; }
-.lt-ie9 body .browsehappy {
-  display: block; }
-  .lt-ie9 body .browsehappy * {
-    display: inline-block; }
-
-/*!
-index
-*/
-#index body {
-  max-width: 80%;
-  min-width: 320px;
-  margin: 0 auto; }
-#index .content {
-  max-width: 100%; }
-  #index .content * {
-    color: #ddd; }
-#index #outer {
-  position: absolute;
-  top: 0;
-  left: 25%;
-  width: 50%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-#index #table-container {
-  height: 100%;
-  width: 100%;
-  display: table;
-  padding: 0;
-  margin: 0; }
-#index #table-cell {
+div {
   font-size: 3em;
-  vertical-align: middle;
-  height: 100%;
-  display: table-cell;
-  text-align: center;
-  padding: 0;
-  margin: 0; }
-
-@media screen and (min-width: 1px) and (max-width: 479px) {
-  #index #table-cell {
-    font-size: 1.4em; } }
-
-@media screen and (min-width: 480px) and (max-width: 959px) {
-  #index #table-cell {
-    font-size: 2em; } }
+  background: #666;
+  color: #f9f9f9; }
