@@ -1,0 +1,167 @@
+/*!
+main
+*/
+
+//	global
+
+	//	media queries
+	$skinny:		"screen and (min-width: 1px) and (max-width: 479px)";
+	$wide:			"screen and (min-width: 480px) and (max-width: 959px)";
+	$wider:			"screen and (min-width: 960px) and (max-width: 1119px)";
+	$widest:		"screen and (min-width: 1120px)";
+
+		// @media #{$skinny} {
+		// 	//	placeholder
+		// }
+		// @media #{$wide} {
+		// 	//	placeholder
+		// }
+		// @media #{$wider} {
+		// 	//	placeholder
+		// }
+		// @media #{$widest} {
+		// 	//	placeholder
+		// }
+
+	//	color
+	$cBase			: #fff;
+	$cCopy			: #1a1a1a;
+	$cLink			: #3498db;
+	$cHover			: #2980b9;
+	$cBackground	: #34495e;
+	$cDark			: #1a1a1a;
+	$cLight			: #ddd;
+
+	//	font
+	$fBase		: "Avenir Next", "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//	structure
+
+	//	default
+	body {
+		width: 100%;
+		min-width: 320px;
+		margin: 0 auto;
+	}
+
+//	font
+
+	//	default
+	body {
+		font-family: $fBase;
+	}
+
+//	color
+
+	//	background
+	html,body {
+		background: $cBase;
+	}
+
+	//	copy
+	html,body {
+		color: $cCopy;
+	}
+
+//	links
+
+	//	default
+	a, a:link, a:visited {
+		text-decoration: none;
+		color: $cLink;
+	}
+	a:active, a:hover, a:focus {
+		text-decoration: none;
+		color: $cHover;
+	}
+
+	//	color : user
+	::selection {
+		color: $cBase;
+		background: $cCopy;
+	}
+	::-moz-selection {
+		color: $cCopy;
+		background: $cBase;
+	}
+
+//	theme
+
+//	print
+
+	@media print {
+		//	placeholder
+	}
+
+//	ie
+.lt-ie9 {
+	body {
+		* {
+			display: none;
+		}
+		.browsehappy {
+			display: block;
+			* {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+/*!
+index
+*/
+
+#index {
+	// background: url('images/hero/truegrit.png') no-repeat center center fixed $cDark;
+	body {
+		max-width: 80%;
+		min-width: 320px;
+		margin: 0 auto;
+	}
+	.content {
+		* {
+			color: $cLight;
+		}
+		max-width: 100%;
+	}
+	#outer {
+		position:absolute;
+		top:0;
+		left:25%;
+		width:50%;
+		height:100%;
+		padding:0;
+		margin:0;
+	}
+	#table-container {
+		height:100%;
+		width:100%;
+		display:table;
+		padding:0;
+		margin:0;
+	}
+	#table-cell {
+		font-size: 3em;
+		vertical-align:middle;
+		height:100%;
+		display:table-cell;
+		text-align: center;
+		padding:0;
+		margin:0;
+	}
+}
+@media #{$skinny} {
+	#index {
+		#table-cell {
+			font-size: 1.4em;
+		}
+	}
+}
+@media #{$wide} {
+	#index {
+		#table-cell {
+			font-size: 2em;
+		}
+	}
+}

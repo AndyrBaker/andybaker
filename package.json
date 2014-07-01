@@ -1,22 +1,32 @@
 {
-  "name": "andybaker",
-  "version": "0.0.0",
-  "description": "andybaker =========",
-  "main": "index.js",
+  "name": "gwlabarre",
+  "version": "0.0.2",
+  "description": "gwlabarre.com",
+  "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AndyrBaker/andybaker.git"
+    "url": "https://github.com/gwlabarre/gwlabarre.git"
   },
-  "author": "",
+  "author": "gwlabarre",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AndyrBaker/andybaker/issues"
+    "url": "https://github.com/gwlabarre/gwlabarre/issues"
   },
-  "homepage": "https://github.com/AndyrBaker/andybaker",
+  "homepage": "https://github.com/gwlabarre/gwlabarre",
   "dependencies": {
-    "express": "^4.4.3"
+    "express" : "3.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.5",
+    "gulp-concat": "^2.2.0",
+    "gulp-connect": "^2.0.5",
+    "gulp-jshint": "^1.6.3",
+    "gulp-minify-css": "^0.3.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.2",
+    "gulp-uglify": "^0.3.1"
   }
 }
