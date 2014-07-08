@@ -31,7 +31,20 @@ a:active, a:hover, a:focus {
   color: #1a1a1a;
   background: #fff; }
 
-div {
-  font-size: 3em;
-  background: #666;
-  color: #f9f9f9; }
+html, body {
+  background: #1a1a1a; }
+
+.content {
+  background: #1a1a1a; }
+  .content p {
+    font-size: 4em;
+    margin: 0;
+    padding: 8em 2em;
+    border-bottom: 1px #444 solid;
+    text-align: center; }
+  .content p:nth-child(even) {
+    color: #1a1a1a;
+    background: #ddd; }
+  .content p:nth-child(odd) {
+    color: #ddd;
+    background: #34495e; }

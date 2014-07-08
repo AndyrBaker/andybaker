@@ -15,6 +15,7 @@ main
 
 	//	font
 	$fBase		: Helvetica, Arial, sans-serif;
+	$fAlt		: Times, serif;
 
 //	structure
 
@@ -66,10 +67,31 @@ main
 		background: $cBase;
 	}
 
-//	andy, you can build on stuff below this line
+//	ANDY'S WORKSHOP
 
-div {
-	font-size: 3em;
-	background: #666;
-	color: #f9f9f9;
+$layoutPadding : 1em * 2;
+
+html,body {
+	background: $cDark;
 }
+
+.content {
+	background: $cDark;
+	p {
+		font-size: 4em;
+		margin: 0;
+		padding: ($layoutPadding * 4) ($layoutPadding * 1);
+		border-bottom: 1px #444 solid;
+		text-align: center;
+	}
+	p:nth-child(even) {
+		color: $cDark;
+		background: $cLight;
+	}
+	p:nth-child(odd) {
+		color: $cLight;
+		background: $cBackground;
+	}
+}
+
+
