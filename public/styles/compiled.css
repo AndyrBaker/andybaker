@@ -2,7 +2,7 @@
 main
 */
 body {
-  width: 100%;
+  width: 1000px;
   min-width: 320px;
   margin: 0 auto; }
 
@@ -36,15 +36,35 @@ html, body {
 
 .content {
   background: #1a1a1a; }
-  .content p {
+  .content h1 {
     font-size: 4em;
     margin: 0;
     padding: 8em 2em;
     border-bottom: 1px #444 solid;
     text-align: center; }
-  .content p:nth-child(even) {
+  .content h1:nth-child(even) {
     color: #1a1a1a;
     background: #ddd; }
-  .content p:nth-child(odd) {
+  .content h1:nth-child(odd) {
     color: #ddd;
     background: #34495e; }
+  .content h2 {
+    font-size: 3em;
+    margin: 0;
+    margin-top: 1em;
+    text-align: center;
+    color: #1A1A1A;
+    padding: 0em 0em; }
+  .content p {
+    font-size: 25pt;
+    margin: 0;
+    padding: 2em 0em;
+    text-align: center;
+    color: #AA0A76; }
+  .content div {
+    width: 400px;
+    height: 300px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: rgba(106, 106, 110, 0.6); }

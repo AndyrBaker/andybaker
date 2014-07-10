@@ -21,7 +21,7 @@ main
 
 	//	default
 	body {
-		width: 100%;
+		width: 1000px;
 		min-width: 320px;
 		margin: 0 auto;
 	}
@@ -77,20 +77,43 @@ html,body {
 
 .content {
 	background: $cDark;
-	p {
+	h1 {
 		font-size: 4em;
 		margin: 0;
 		padding: ($layoutPadding * 4) ($layoutPadding * 1);
 		border-bottom: 1px #444 solid;
 		text-align: center;
 	}
-	p:nth-child(even) {
+	h1:nth-child(even) {
 		color: $cDark;
 		background: $cLight;
 	}
-	p:nth-child(odd) {
+	h1:nth-child(odd) {
 		color: $cLight;
 		background: $cBackground;
+	}
+		h2 {
+		font-size: 3em;
+		margin: 0;
+		margin-top: 1em;
+		text-align: center;
+		color:#1A1A1A;
+		padding: ($layoutPadding * 0) ($layoutPadding * 0);
+	}
+	p {
+		font-size: 25pt;
+		margin: 0;
+		padding: ($layoutPadding * 1) ($layoutPadding * 0);
+		text-align: center;
+		color:#AA0A76;
+	}
+	div {
+		width:400px;
+		height:300px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		background:rgba(106,106,110,0.6);
 	}
 }
 
