@@ -10,7 +10,7 @@ main
 	$cLink			: #3498db;
 	$cHover			: #2980b9;
 	$cBackground	: #34495e;
-	$cDark			: #1a1a1a;
+	$cDark			: #1A2428;
 	$cLight			: #ddd;
 
 	//	font
@@ -81,39 +81,27 @@ html,body {
 		font-size: 4em;
 		margin: 0;
 		padding: ($layoutPadding * 4) ($layoutPadding * 1);
-		border-bottom: 1px #444 solid;
 		text-align: center;
-	}
-	h1:nth-child(even) {
-		color: $cDark;
-		background: $cLight;
-	}
-	h1:nth-child(odd) {
-		color: $cLight;
-		background: $cBackground;
+		color:#35393F;
+		background-color: #7E919B;
+
 	}
 		h2 {
-		font-size: 3em;
-		margin: 0;
+		font-size: 2em;
+		margin: 0em;
 		margin-top: 1em;
 		text-align: center;
-		color:#1A1A1A;
-		padding: ($layoutPadding * 0) ($layoutPadding * 0);
+		color:#7E919B;
+		background: #262C34;
+		padding: ($layoutPadding * 4) ($layoutPadding * 3);
 	}
 	p {
-		font-size: 25pt;
+		font-size: 2em;
 		margin: 0;
 		padding: ($layoutPadding * 1) ($layoutPadding * 0);
 		text-align: center;
-		color:#AA0A76;
-	}
-	div {
-		width:400px;
-		height:300px;
-		-webkit-border-radius: 15px;
-		-moz-border-radius: 15px;
-		border-radius: 15px;
-		background:rgba(106,106,110,0.6);
+		color:#35393F;
+		background-color: #7E919B;
 	}
 }
 
