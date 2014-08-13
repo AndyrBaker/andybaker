@@ -37,24 +37,35 @@ html, body {
 .content {
   background: #1A2428; }
   .content h1 {
-    font-size: 4em;
-    margin: 0;
-    padding: 8em 2em;
+    display: inline-block;
+    font-size: 3.4em;
+    margin: 10;
+    padding: 3em 12em;
     text-align: center;
     color: #35393F;
     background-color: #7E919B; }
   .content h2 {
-    font-size: 2em;
-    margin: 0em;
+    display: inline;
+    font-size: 1em;
+    margin: 10em;
     margin-top: 1em;
-    text-align: center;
+    text-align: right;
     color: #7E919B;
     background: #262C34;
-    padding: 8em 6em; }
+    padding: 3em 12em; }
   .content p {
     font-size: 2em;
     margin: 0;
-    padding: 2em 0em;
+    padding: 3em 0em;
     text-align: center;
     color: #35393F;
     background-color: #7E919B; }
+  .content ul, .content li {
+    font-size: 1em;
+    color: #262C34;
+    margin: 1em;
+    background-color: #7E919B;
+    padding: 0em 0em;
+    text-align: left; }
+  .content span {
+    display: block; }
