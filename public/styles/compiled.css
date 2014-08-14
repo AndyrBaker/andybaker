@@ -2,7 +2,6 @@
 main
 */
 body {
-  width: 1000px;
   min-width: 320px;
   margin: 0 auto; }
 
@@ -31,21 +30,18 @@ a:active, a:hover, a:focus {
   color: #1a1a1a;
   background: #fff; }
 
-html, body {
-  background: #1A2428; }
-
 .content {
   background: #1A2428; }
   .content h1 {
-    display: inline-block;
+    display: block;
     font-size: 3.4em;
-    margin: 10;
+    margin: 10em;
     padding: 3em 12em;
     text-align: center;
     color: #35393F;
     background-color: #7E919B; }
   .content h2 {
-    display: inline;
+    display: block;
     font-size: 1em;
     margin: 10em;
     margin-top: 1em;
@@ -60,12 +56,18 @@ html, body {
     text-align: center;
     color: #35393F;
     background-color: #7E919B; }
-  .content ul, .content li {
-    font-size: 1em;
-    color: #262C34;
+  .content div {
+    background: #fff;
+    border: 1px #333 solid;
     margin: 1em;
-    background-color: #7E919B;
-    padding: 0em 0em;
-    text-align: left; }
-  .content span {
-    display: block; }
+    padding: 1em;
+    background-color: #BE8D44; }
+  .content p {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .content ul {
+    padding-left: 1em; }
+
+#img {
+  display: block;
+  background-color: #BE8D44; }

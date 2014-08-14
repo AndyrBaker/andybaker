@@ -21,7 +21,7 @@ main
 
 	//	default
 	body {
-		width: 1000px;
+		// width: 1000px;
 		min-width: 320px;
 		margin: 0 auto;
 	}
@@ -72,52 +72,82 @@ main
 $layoutPadding : 1em * 3;
 
 html,body {
-	background: $cDark;
+	// background: $cDark;
 }
 
 .content {
-	background: $cDark;
-	h1 {
-		display: inline-block;
-		font-size: 3.4em;
-		margin: 10;
-		padding: ($layoutPadding * 1) ($layoutPadding * 4);
-		text-align: center;
-		color:#35393F;
-		background-color: #7E919B;
+	 background: $cDark;
+	 h1 {
+	 	display: block;
+	 	font-size: 3.4em;
+	 	margin: 10em;
+	 	padding: ($layoutPadding * 1) ($layoutPadding * 4);
+	 	text-align: center;
+	 	color:#35393F;
+	 	background-color: #7E919B;
 
-	}
-		h2 {
-		display: inline;
-		font-size: 1em;
-		margin: 10em;
-		margin-top: 1em;
-		text-align: right;
-		color:#7E919B;
-		background: #262C34;
-		padding: ($layoutPadding * 1) ($layoutPadding * 4);
-	}
-	p {
-		font-size: 2em;
-		margin: 0;
-		padding: ($layoutPadding * 1) ($layoutPadding * 0);
-		text-align: center;
-		color:#35393F;
-		background-color: #7E919B;
-	}
-	ul,li {
-		font-size: 1em;
-		color: #262C34;
+	 }
+	 	h2 {
+	 	display: block;
+	 	font-size: 1em;
+	 	margin: 10em;
+	 	margin-top: 1em;
+	 	text-align: right;
+	 	color:#7E919B;
+	 	background: #262C34;
+	 	padding: ($layoutPadding * 1) ($layoutPadding * 4);
+	 }
+	 p {
+	 	font-size: 2em;
+	 	margin: 0;
+	 	padding: ($layoutPadding * 1) ($layoutPadding * 0);
+	 	text-align: center;
+	 	color:#35393F;
+	 	background-color: #7E919B;
+	 }
+
+
+	div {
+		background: #fff;
+		border: 1px #333 solid;
 		margin: 1em;
-		
-		background-color: #7E919B;
-		padding: ($layoutPadding * 0) ($layoutPadding * 0);
-		text-align: left;
+		padding: 1em;
+		background-color: #BE8D44;
 	}
-	span {
-		display: block;
 
+	p {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	ul {
+		padding-left: 1em;
+	}
+
+	ul li:nth-child(odd) {
+		// color: red;
+	}
+	ul li:nth-child(even) {
+		// color: green;
+
+	}
+	div:nth-child(odd) {
+		// background: red;
+	}
+	div:nth-child(even) {
+		// background: green;
+	}
+	div:last-child {
+		// height: 400px;
 	}
 }
+
+#img {
+
+	display: block;
+	background-color: #BE8D44;
+
+}
+
+
 
 
