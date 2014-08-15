@@ -69,7 +69,7 @@ main
 
 //	ANDY'S WORKSHOP
 
-$layoutPadding : 1em * 3;
+$layoutPadding : 1em * 1;
 
 html,body {
 	// background: $cDark;
@@ -81,7 +81,7 @@ html,body {
 	 	display: block;
 	 	font-size: 3.4em;
 	 	margin: 10em;
-	 	padding: ($layoutPadding * 1) ($layoutPadding * 4);
+	 	padding: ($layoutPadding * 2) ($layoutPadding * 2);
 	 	text-align: center;
 	 	color:#35393F;
 	 	background-color: #7E919B;
@@ -115,39 +115,21 @@ html,body {
 		background-color: #BE8D44;
 	}
 
-	p {
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-	ul {
-		padding-left: 1em;
-	}
-
-	ul li:nth-child(odd) {
-		// color: red;
-	}
-	ul li:nth-child(even) {
-		// color: green;
-
-	}
-	div:nth-child(odd) {
-		// background: red;
-	}
-	div:nth-child(even) {
-		// background: green;
-	}
-	div:last-child {
-		// height: 400px;
-	}
 }
 
 #img {
 
-	display: block;
+	display: inline-block;
 	background-color: #BE8D44;
 
 }
+img {
+	padding: 1em;
+}
 
-
+li {
+	font-size: 1.3em;
+	color: #262C34;
+}
 
 

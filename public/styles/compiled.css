@@ -36,7 +36,7 @@ a:active, a:hover, a:focus {
     display: block;
     font-size: 3.4em;
     margin: 10em;
-    padding: 3em 12em;
+    padding: 2em 2em;
     text-align: center;
     color: #35393F;
     background-color: #7E919B; }
@@ -48,11 +48,11 @@ a:active, a:hover, a:focus {
     text-align: right;
     color: #7E919B;
     background: #262C34;
-    padding: 3em 12em; }
+    padding: 1em 4em; }
   .content p {
     font-size: 2em;
     margin: 0;
-    padding: 3em 0em;
+    padding: 1em 0em;
     text-align: center;
     color: #35393F;
     background-color: #7E919B; }
@@ -62,12 +62,14 @@ a:active, a:hover, a:focus {
     margin: 1em;
     padding: 1em;
     background-color: #BE8D44; }
-  .content p {
-    text-transform: uppercase;
-    font-weight: bold; }
-  .content ul {
-    padding-left: 1em; }
 
 #img {
-  display: block;
+  display: inline-block;
   background-color: #BE8D44; }
+
+img {
+  padding: 1em; }
+
+li {
+  font-size: 1.3em;
+  color: #262C34; }
