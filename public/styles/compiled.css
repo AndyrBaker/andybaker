@@ -2,7 +2,7 @@
 main
 */
 body {
-  min-width: 320px;
+  min-width: 1000px;
   margin: 0 auto; }
 
 body {
@@ -34,42 +34,44 @@ a:active, a:hover, a:focus {
   background: #1A2428; }
   .content h1 {
     display: block;
-    font-size: 3.4em;
-    margin: 10em;
-    padding: 2em 2em;
+    font-size: 3em;
+    margin: 1em;
+    padding: 1em 1em;
     text-align: center;
     color: #35393F;
-    background-color: #7E919B; }
+    background-color: #7E919B;
+    float: top; }
   .content h2 {
     display: block;
     font-size: 1em;
-    margin: 10em;
-    margin-top: 1em;
-    text-align: right;
-    color: #7E919B;
-    background: #262C34;
-    padding: 1em 4em; }
-  .content p {
-    font-size: 2em;
-    margin: 0;
-    padding: 1em 0em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 10.3em;
     text-align: center;
-    color: #35393F;
-    background-color: #7E919B; }
-  .content div {
-    background: #fff;
-    border: 1px #333 solid;
-    margin: 1em;
-    padding: 1em;
-    background-color: #BE8D44; }
-
-#img {
-  display: inline-block;
-  background-color: #BE8D44; }
-
-img {
-  padding: 1em; }
-
-li {
-  font-size: 1.3em;
-  color: #262C34; }
+    color: #1A2428;
+    background: #7E919B;
+    padding: 1em 1em;
+    width: 7em;
+    height: 50em;
+    float: left; }
+  .content h3 {
+    font-size: 2em;
+    padding: 1em 1em;
+    text-align: center;
+    color: #1A2428;
+    background-color: #7E919B;
+    display: block;
+    margin: 1.5em; }
+  .content ul {
+    font-size: 1em;
+    margin: 1;
+    padding: 1em 1em;
+    text-align: left;
+    color: #E6E6E6;
+    height: 2em;
+    display: inline-block;
+    list-style-type: none; }
+  .content #port, .content img {
+    display: block;
+    padding: 5px;
+    margin-left: 7.9em; }

@@ -22,7 +22,7 @@ main
 	//	default
 	body {
 		// width: 1000px;
-		min-width: 320px;
+		min-width: 1000px;
 		margin: 0 auto;
 	}
 
@@ -77,59 +77,57 @@ html,body {
 
 .content {
 	 background: $cDark;
+
 	 h1 {
 	 	display: block;
-	 	font-size: 3.4em;
-	 	margin: 10em;
-	 	padding: ($layoutPadding * 2) ($layoutPadding * 2);
+	 	font-size: 3em;
+	 	margin: 1em;
+	 	padding: ($layoutPadding * 1) ($layoutPadding * 1);
 	 	text-align: center;
 	 	color:#35393F;
 	 	background-color: #7E919B;
+	 	float: top;
 
 	 }
 	 	h2 {
 	 	display: block;
 	 	font-size: 1em;
-	 	margin: 10em;
-	 	margin-top: 1em;
-	 	text-align: right;
-	 	color:#7E919B;
-	 	background: #262C34;
-	 	padding: ($layoutPadding * 1) ($layoutPadding * 4);
-	 }
-	 p {
-	 	font-size: 2em;
-	 	margin: 0;
-	 	padding: ($layoutPadding * 1) ($layoutPadding * 0);
+	 	margin-left: 3em;
+	 	margin-right: 3em;
+	 	margin-top: 10.3em;
 	 	text-align: center;
-	 	color:#35393F;
+	 	color:#1A2428;
+	 	background: #7E919B;
+	 	padding: ($layoutPadding * 1) ($layoutPadding * 1);
+	 	width: 7em;
+	 	height: 50em;
+	 	float: left;
+	 }
+	 
+	 h3 {
+	 	font-size: 2em;
+	 	padding: ($layoutPadding * 1) ($layoutPadding * 1);
+	 	text-align: center;
+	 	color:#1A2428;
 	 	background-color: #7E919B;
+	 	display: block;
+	 	margin: 1.5em;
 	 }
 
-
-	div {
-		background: #fff;
-		border: 1px #333 solid;
-		margin: 1em;
-		padding: 1em;
-		background-color: #BE8D44;
-	}
-
+	 ul{
+	 	font-size: 1em;
+	 	margin: 1;
+	 	padding: ($layoutPadding * 1) ($layoutPadding * 1);
+	 	text-align: left;
+	 	color:#E6E6E6;
+	 	height: 2em;
+	 	display: inline-block;
+	 	list-style-type: none;
+	 }
+	 #port, img{
+	 	display: block;
+	 	padding: 5px;
+	 	margin-left: 7.9em;
+	 }	
 }
-
-#img {
-
-	display: inline-block;
-	background-color: #BE8D44;
-
-}
-img {
-	padding: 1em;
-}
-
-li {
-	font-size: 1.3em;
-	color: #262C34;
-}
-
 
