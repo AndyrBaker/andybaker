@@ -30,48 +30,42 @@ a:active, a:hover, a:focus {
   color: #1a1a1a;
   background: #fff; }
 
+html, body {
+  background: #1A2428;
+  background-color: #1A2428; }
+
 .content {
   background: #1A2428; }
   .content h1 {
     display: block;
     font-size: 3em;
     margin: 1em;
-    padding: 1em 1em;
-    text-align: center;
-    color: #35393F;
-    background-color: #7E919B;
-    float: top; }
+    padding: 1em 1em; }
   .content h2 {
     display: block;
     font-size: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 10.3em;
-    text-align: center;
-    color: #1A2428;
-    background: #7E919B;
-    padding: 1em 1em;
-    width: 7em;
-    height: 50em;
-    float: left; }
+    padding: 1em 1em; }
   .content h3 {
     font-size: 2em;
     padding: 1em 1em;
-    text-align: center;
-    color: #1A2428;
-    background-color: #7E919B;
-    display: block;
-    margin: 1.5em; }
-  .content ul {
-    font-size: 1em;
-    margin: 1;
-    padding: 1em 1em;
-    text-align: left;
-    color: #E6E6E6;
-    height: 2em;
-    display: inline-block;
-    list-style-type: none; }
+    text-align: center; }
   .content #port, .content img {
     display: block;
     padding: 5px;
     margin-left: 7.9em; }
+  .content div {
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    background-color: #141414; }
+    .content div header {
+      color: #7E919B;
+      font-size: 2em;
+      text-align: center;
+      padding-top: 1em; }
+    .content div p {
+      font-size: 0.4em;
+      color: #7E919B;
+      margin: 20px; }
