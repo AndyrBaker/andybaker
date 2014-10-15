@@ -82,73 +82,76 @@ html,body {
 	 background: $cDark;
 	 width: 100%;
 	 h1 {	 	
-	 	font-size: 2.3em;
+	 	font-size: 3.3em;
 	 	padding: ($layoutPadding * 0) ($layoutPadding * 0);	
 	 }
 	 	h2 {
-	 	font-size: 1.2em;	 	
+	 	font-size: 2.2em;	 	
 	 	padding: ($layoutPadding * 0) ($layoutPadding * 0);
 	 }
 	 
 	 h3 {
-	 	font-size: 1em;
+	 	font-size: 2.1em;
 	 	padding: ($layoutPadding * 0) ($layoutPadding * 0);
 	 }
 	 p{
-		font-size:14px;
+		font-size:1.1em;
 	}
 	li, p, h3, h2, h1{
-	  font-family:arial,sans-serif;
+	  font-family:'Pathway Gothic One', sans-serif;
 	  color:#141414;
 	  text-align:center;
-	  margin-right:30%;
-	  margin-left:30%;
+	  margin-right:20%;
+	  margin-left:20%;
 	}
 	li,ul{
-	  font-size:1em;
+	  font-size:1.1em;
 	  text-decoration:none;
 	  list-style-type: none;
 	  padding:0;
 	}
 	#copy{
-	width:100%;
+	width:100%;    
 	}	
 	 #boxright{
-	  width:7em;
+	  width:7%;
 	  height:30;
-	  background-color:#606162;
+	  background-color:black;
 	  display:inline-flex;
 	  float:right;
 	}
 	#boxmiddle{
-	background-color:#DCE6E6;
+	background-color:#C5AF75;
 	display:inline-flex;
-	margin:0 auto; width:60%;
+	margin:0 auto; width:100%;
 	}
 	#boxleft{
-	  width:7em;
+	  width:7%;
 	  height:30;
-	  background-color:#606162;
+	  background-color:black;
 	  display:inline-flex;
 	  float:left;
+
 	}
 	#container{
-	background-color:#1D1F20;
+	background-color:#E9E0B9;
 	width:100%;
 	height:100%;
 	display:flex;
 	}
 	#portfolio{
-	background-color:#1D1F20;
+	background-color:#ffffff;
 	width:50%;
 	height: auto;
 	margin: auto;
 	padding: 1em;
+	outline: 1px;
+	outline-color: green;
 	}
 	img{
 	width: 40%;
 	height: 40%;
-	display: inline-block;
+	display: inline-flex;
 	margin: auto;
 	padding: .6em;
 	}
