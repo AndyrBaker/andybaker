@@ -1,12 +1,16 @@
+//	include gulp
+	var gulp = require('gulp');
 
-//	Include gulp
-var gulp = require('gulp');
+//	include plugins
 
-//	Include Plugins
+	//	livereload
+	livereload = require('gulp-livereload');
 
-	//	css & sass
-	var minifyCSS = require('gulp-minify-css');
+	//	sass
 	var sass = require('gulp-sass');
+
+	//	css
+	var minifyCSS = require('gulp-minify-css');
 
 	//	js
 	var jshint = require('gulp-jshint');
@@ -17,66 +21,55 @@ var gulp = require('gulp');
 	var rename = require('gulp-rename');
 	var connect = require('gulp-connect');
 
-//	Compile Sass (first before compiling css)
-gulp.task('sass', function() {
-	return gulp.src('public/styles/*.scss')
-		.pipe(concat('styles.scss'))
-		.pipe(sass())
-		.pipe(rename('compiled.css'))
-		.pipe(gulp.dest('public/styles/'));
-});
+//	specific tasks
 
-// CSS concat and minify (possibly add autoprefixer)
-gulp.task('styles', function() {
-  gulp.src(['public/styles/normalize.css', 'public/styles/h5bp.css', 'public/styles/compiled.css'])
-    .pipe(concat('styles.css'))
-    .pipe(minifyCSS())
-    .pipe(rename('master.css'))
-    .pipe(gulp.dest('public'))
-    .pipe(connect.reload());
-});
+	//	pages
 
-//	Minify CSS
-gulp.task('minify-css', function() {
-  gulp.src('public/master.css')
-    .pipe(minifyCSS({keepBreaks:true}))
-    .pipe(gulp.dest('public'))
-});
+		// gulp.task('homepage', function() {
+		// 	gulp.src('public/styles/*.scss')
+		// 		.pipe(sass())
+		// 		.pipe(minifyCSS({keepBreaks:true}))
+		// 		.pipe(gulp.dest('public/styles/dist/'))
+		// 		.pipe(livereload());
+		// 	gulp.src('public/scripts/*.js')
+		// 		.pipe(jshint())
+		// 		.pipe(jshint.reporter('default'))
+		// 		.pipe(uglify())
+		// 		.pipe(gulp.dest('public/scripts/dist/'))
+		// 		.pipe(livereload());
+		// });
 
-//	Lint Task
-gulp.task('lint', function() {
-	return gulp.src('public/scripts/*.js')
-		.pipe(jshint())
-		.pipe(jshint.reporter('default'));
-});
+		gulp.task('homepage', function() {
+			gulp.src('public/*.html')
+				.pipe(livereload());
+		});
 
-//	Concatenate & Minify JS
-gulp.task('scripts', function() {
-	return gulp.src('public/scripts/*.js')
-		.pipe(concat('compiled.js'))
-		.pipe(gulp.dest('public/scripts/dist'))
-		.pipe(rename('master.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('public'))
-		.pipe(connect.reload());
-});
+//	global tasks
 
-//	Watch Files For Changes
-gulp.task('watch', function() {
-	gulp.watch('public/scripts/*.js', ['lint', 'scripts']);
-	gulp.watch('public/styles/*.scss', ['sass']);
-	gulp.watch('public/styles/*.css', ['styles']);
-});
-
-//	Connect
-gulp.task('connect', function() {
-	connect.server({
-		root: ['public'],
-		port: 8000,
-		livereload: true
+	gulp.task('connect', function() {
+		connect.server({
+			root: ['public'],
+			port: 8000,
+			livereload: true
+		});
 	});
-});
 
-//	Default Task
-gulp.task('default', ['sass', 'styles', 'minify-css', 'lint', 'scripts', 'watch', 'connect']);
- 
+	gulp.task('watch', function() {
+
+		livereload.listen();
+
+		//	/index.html
+		gulp.watch(['public/*.html'], ['homepage']);
+		// gulp.watch(['public/*.html'], ['homepage']);
+		// gulp.watch(['public/scripts/*.js'], ['homepage']);
+		// gulp.watch(['public/styles/*.scss'], ['homepage']);
+
+	});
+
+//	build tasks
+
+	gulp.task('rebuild', ['homepage', 'watch', 'connect']);
+
+//	default task
+
+	gulp.task('default', ['watch', 'connect']);
