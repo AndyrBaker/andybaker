@@ -1,0 +1,68 @@
+/* Welcome to all the CSS */
+
+/* GENERAL */
+	body{
+	width:100%; 
+	background-color: white;
+	vertical-align: center;
+	}
+
+	#wrapper{
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: white;
+	}
+
+	img{
+	width: 60%;
+	display: block;
+	margin: 10px auto;
+	}
+	  /* collums */
+	#collums {
+	display: inline-block;
+	}
+
+	#tile1 {
+	width:28%;
+	float: left;
+	padding-left: 20%;
+	}
+
+	#tile2 {
+	width:28%;
+	float: right; 
+	padding-right: 20%;
+}
+/* ---------------*/
+	/* MOBILE - 480px and under */
+/* ---------------*/
+@media screen and (max-width: 480px) {
+
+	img{
+	width: 80%;
+	margin: 10px auto;
+	}
+
+	#wrapper{
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: white;
+	}	
+	  /* collums */
+	#tile1, #tile2  {
+	width:80%;
+	display: block;
+	float: none;
+ 	margin: 0 auto;
+	padding: 10px 20px;
+	}
+}
+
+/*
+
+▄██████████████▄▐█▄▄▄▄█▌
+██████▌▄▌▄▐▐▌███▌▀▀██▀▀
+████▄█▌▄▌▄▐▐▌▀███▄▄█▌
+▄▄▄▄▄██████████████▀
+
