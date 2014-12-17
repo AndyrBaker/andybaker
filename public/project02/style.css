@@ -47,7 +47,7 @@ img{
 	}
 }
 /* MOBILE - 480px and under DOES NOT INCLUDE IPHONE 6 */
-@media only screen (min-device-width : 320px) and (max-device-width : 480px) {
+@media screen and  (max-width : 640px) {
 	img{
 		width: 100%;
 		margin-top:10px;
