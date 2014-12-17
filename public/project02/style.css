@@ -28,7 +28,7 @@ img{
 		margin-top:10px;
 	}
 	#wrapper{
-		max-width: 80%;
+		max-width: 90%;
 		margin: auto;
 		text-align: center;
 	}
@@ -47,7 +47,7 @@ img{
 	}
 }
 /* MOBILE - 480px and under */
-@media screen and (max-width: 480px) {
+@media only screen (max-width: 480px) {
 	img{
 		width: 100%;
 		margin-top:10px;
