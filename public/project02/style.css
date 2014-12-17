@@ -22,7 +22,7 @@ img{
 	height: 200px;
 }
 /* MOBILE - 480px and under */
-@media screen and  (min-device-width : 480px) and (max-device-width : 645px){
+@media only screen and  (max-device-width : 480px) {
 	img{
 		width: 100%;
 		margin-top:10px;
