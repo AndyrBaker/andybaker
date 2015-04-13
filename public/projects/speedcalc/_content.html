@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Speed Calculator</title>
+<style type="text/css">
+body{
+background-color:#1D1F20;  
+}
+h1{
+color:white;
+font-size:2em; 
+}
+h3{
+color:white;
+font-size:1em;
+}
+#wrapper{
+text-align:center;
+margin:auto;  
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1>Trip Time Calculator</h1>
+  <h3>Will speeding save you time?</h3>  
+  
+<form>
+  <input type="text" id="inputSpeedLimit" placeholder="Speed Limit" oninput="calulator">
+  <input type="text" id="inputYourSpeed" placeholder="Your Speed">
+  <input type="text" id="inputTripDistance" placeholder="Trip Distance">
+</form>
+
+<h1 id="response">Time Saved:</h1>
+</div>
+</body>
+
+<script>
+var response = document.getElementById('response');
+var inputSpeedLimit = document.getElementById('inputSpeedLimit');
+var inputYourSpeed = document.getElementById('inputYourSpeed');
+var inputTripDistance = document.getElementById('inputTripDistance');
+
+inputSpeedLimit.addEventListener('change', function() {
+  
+  calulator();
+
+	}, false
+
+);
+
+inputYourSpeed.addEventListener('change', function() {
+  
+  calulator();
+
+	}, false
+
+);
+
+inputTripDistance.addEventListener('change', function() {
+  
+  calulator();
+
+	}, false
+
+);
+
+function calulator () {
+  var speedLimit = inputSpeedLimit.value;
+  var yourSpeed = inputYourSpeed.value;
+  var tripDistance = inputTripDistance.value;
+
+  var legalSpeed = (tripDistance / speedLimit);
+  var userSpeed = (tripDistance / yourSpeed);
+  var answer = Math.floor(legalSpeed - userSpeed);
+  
+  if (answer===1){
+    response.innerHTML = 'Time Saved: ' + answer + ' hour.';
+  }
+   else if (isNaN(answer)){
+     response.innerHTML = 'Time Saved:';
+   }  
+	else  {
+    response.innerHTML = 'Time Saved: ' + answer + ' Hours.';
+  }
+  
+}
+</script>
+</html>
