@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Bike Outlook</title>
+	<style type="text/css">
+body{
+width:100%;
+height:100%;  
+background-color:#3498db;
+}
+input{
+margin:auto;  
+border:none;
+width:200px;
+height:30px;
+display:block;
+}
+button{
+font-family:helvetica, arial,sans-serif;
+margin:auto;
+display:block;
+border:none;
+background-color:#ffffff;
+width:120px;
+height:32px;
+margin-top:1em;  
+}
+h1,h2,p {
+font-family:helvetica, arial,sans-serif;
+font-weight:300;
+color:#ffffff;
+text-align:center;
+}
+h1{
+font-size:3em;  
+color:#ffffff; 
+}
+h2{
+font-size:1.5em;  
+color:#ffffff;   
+}
+p{
+font-size: 4em;
+text-align: center;	
+}
+</style>
+</head>
+
+<body>
+<h1>THE BIKE OUTLOOK</h1>
+<h2>Should you ride right now?</h2>
+<button id="submit" onclick="userLocation()">Should I ride?</button>
+<p id="demo"></p>
+</body>
+<script type="text/javascript">
+	
+var x = document.getElementById("demo");
+
+function userLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;	
+}	
+
+</script>
+</html>

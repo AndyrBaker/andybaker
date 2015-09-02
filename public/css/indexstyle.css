@@ -40,56 +40,22 @@ display: inline;
 padding: 1%;
 }
 a{
-target:_blank;
 text-decoration: none;	
 }
-/*---Mobile 1200---*/
-@media screen and (max-width: 1200px) { 
-p{
-width:60%;  
+
+@media only screen and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (width : 375px)
+    and (height : 559px)
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+body{
+background-color: red;
 }
 }
-/*---Mobile 900---*/
-@media screen and (max-width: 900px) { 
-h1{
-font-size:4.5em;
-}
-h2{
-font-size:2.2em;
-}
-p{
-width:65%;  
-}
-}
-/*---Mobile 600---*/
-@media screen and (max-width: 600px) { 
-p{
-width:90%;  
-}
-}
-/*---Mobile 480---*/
-@media screen and (max-width: 480px) { 
-h1{
-font-size: 3.3em;	
-}
-h2{
-font-size: 1.7em;	
-}
-p{
-width:90%; 
-font-size: 1.2em; 
-}
-}
-/*---iphone6---*/
-@media screen and (device-width: 375px) and (device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-h1{
-font-size: 3.3em;	
-}
-h2{
-font-size: 1.7em;	
-}
-p{
-width:90%; 
-font-size: 1.2em; 
-}
-}
+
