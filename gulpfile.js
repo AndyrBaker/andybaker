@@ -72,11 +72,7 @@
 //	specific tasks
 
 	gulp.task('build', [
-		//	homepage
-			'homepage',
-		//	global
-			'watch',
-			'connect'
+		'homepage',
 	]);
 
 //	default task

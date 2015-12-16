@@ -1,0 +1,31 @@
+
+body {
+	background-color:#F1F1F1; 
+}
+
+h1, li {
+	font-family: helvetica,arial,sans-serif;
+	font-weight: 200;
+	text-align: center;
+	display: block;
+	margin: 10px;
+}
+
+h1 {
+	letter-spacing: .4em;
+	margin-top: 23%; 
+}
+
+ul {
+	list-style-type: none;
+	margin-left: -1.3em;
+}
+
+a {
+	color: #3F3F3F;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e74c3c; 
+}
