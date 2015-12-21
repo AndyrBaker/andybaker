@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+body{
+background-color:#121212; 
+}
+h1,h2,h3,ul{
+font-Family:helvetica Neue, helvetica,arial,san-serif; 
+font-weight:300;
+text-align:center;
+}
+h1{
+color:#ecf0f1;
+margin-top:20%;
+letter-spacing:.5em;
+text-align:center;
+}
+h2{
+color:#D7D7D7;
+margin-left:3%;
+letter-spacing:.5em;
+}
+h3{
+color:#A8A8A8;
+font-size:1em; 
+text-align:center;
+padding-left:5%; 
+}
+#movie, #about{
+display:none; 
+}
+.menu{
+letter-spacing:.5em;
+display:inline;
+}
+li{
+font-size:.9em;
+color:#646464;
+list-style:none;
+text-align:center; 
+}
+a{
+color:#454545;
+padding:1em;
+}
+a:hover{
+color:#ecf0f1;
+}
+</style>
+</head>
+
+<body>
+	<h1>Project Ten Seconds</h1>
+	<!-- <h2>1 2 3 4 5 6 7 8 9 10</h2>-->
+	<ul>
+	 <li class="menu"><a onclick="filmMovie()">About</a></li>
+	 <li class="menu"><a onclick="filmAbout()">Watch The Movie</a></li>
+	</ul>
+
+	<div id="about">
+	 <h2>Coming Soon</h2>
+	  <!--<h3>Ideal Quality Standards</h3>
+	  <ul>
+	  <li>HD 1080p settings</li>
+	  <li>Proper Speakers or Headphones</li>
+	  <li></li>
+	  </ul> -->
+	</div>
+
+	<div id="movie">
+	  <ul>
+	   <li>10 seconds of video every day for 365 days</li>
+	  </ul>
+	</div>
+<script type="text/javascript">
+function filmMovie() {
+document.getElementById("about").style.display = "none";
+document.getElementById("movie").style.display = "inline";
+}
+function filmAbout() {
+document.getElementById("movie").style.display = "none";
+document.getElementById("about").style.display = "inline";
+}
+</script>
+</body>
+</html>
