@@ -1,7 +1,7 @@
 body{
 background-color:#F1F1F1; 
 }
-h1,li{
+h1,li,p,button{
 font-family:helvetica,arial,san-serif;
 font-weight:200;
 text-align:center;
@@ -23,3 +23,8 @@ target:_blank;
 a:hover{
 color:#e74c3c; 
 }
+button{
+font-size:1.4em;
+display:inline;
+border:none;
+} 
