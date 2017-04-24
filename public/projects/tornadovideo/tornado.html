@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tornado Video</title>
+<style type="text/css">
+h1,h2{
+font-family:helvetica,arial,san-serif;
+font-weight:200;
+text-align:center;
+display:block;
+}
+button{
+padding-top:-40em; 
+border:none;
+background-color:#fff;
+font-size:1em;
+color:grey;
+display:block;
+}
+button:hover{
+color:#2a2a2a; 
+}
+button:focus{
+outline:none; 
+}
+#test{
+margin:auto; 
+width:50em; 
+}
+iframe{
+margin-left:8em;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Tornado Videos</h1>
+<div id="leftmenu">
+<button data-action="showTornadoVideo" data-type="fullLengthTornado">Full Length Tornado</button>
+ <button data-action="showTornadoVideo" data-type="Tornadotv">TV coverage</button>
+<button data-action="showTornadoVideo" data-type="joplinTornado">Joplin Tornado</button>
+<button data-action="showTornadoVideo" data-type="ElRinoTornado">El Rino Tornado</button>
+<button data-action="showTornadoVideo" data-type="moore">Moore</button>
+<button data-action="showTornadoVideo" data-type="missouri">Missouri</button>
+ <button data-action="showTornadoVideo" data-type="dashcams">Dash Cameras</button>
+</div>
+<div id="test"></div>
+
+</body>
+
+<script type="text/javascript">
+
+
+document.getElementById('leftmenu').addEventListener('click', function (element) {
+
+    if (element.target !== undefined) {
+
+        if (element.target.dataset.action === 'showTornadoVideo') {
+
+            showTornadoVideo(element.target.dataset.type);
+
+        }
+
+    }
+
+}, false);
+
+function showTornadoVideo (argument) {
+
+		
+    var obj = {
+
+
+fullLengthTornado : [
+
+
+`<h2>Tornado Video Classics Vol 1</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/rYmmqS8Oxag" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Tornado Video Classics Vol 2</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/qTPsoDs-rcM" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Tornado Video Classics Vol 3</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/3Y3MbsorN7M" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Terrible Tuesday</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/ZwvJ576kAQo" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Storm Trackers</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/roH75mlRF74" frameborder="0" allowfullscreen></iframe>`
+],
+Tornadotv : [
+`<h2>April 27, 2011 Historic Tornado Outbreak ( Spann)
+</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/ElZZNvNdhks" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Post Tornado Joplin</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/z52bWAbOFW8" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Moore 1999</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/SspJqjf5gyI" frameborder="0" allowfullscreen></iframe>`,
+`<h2>1964 witchitawwww</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/ycxQnTNWheI" frameborder="0" allowfullscreen></iframe>`
+],
+joplinTornado : [
+`<h2>Joplin Hospital</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/vgKzq58UMNM" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Joplin School</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/64covicCcIY" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Joplin Private House</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/nhU579An6PI" frameborder="0" allowfullscreen></iframe>`
+],
+moore : [
+`<h2>Private Tornado Camera</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/EeHe2HglkEY" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Close Proxemity</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/-iuGipbmneY" frameborder="0" allowfullscreen></iframe>`,
+ `<h2>Chaser</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/O1mHLogxh94" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Full Coverage</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/m18YuRxsdA8" frameborder="0" allowfullscreen></iframe>`
+],
+missouri : [
+`<h2>Close-ish footage</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/LUobpQYRgMg" frameborder="0" allowfullscreen></iframe>`,
+],
+dashcams : [
+`<h2>Small Tuscaloosa IL Tornado</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/BLPTrDSjXNw" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Best Tornado Footage I've Ever Seen</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/Szwd-0tatdo" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Brentwood TN buildings</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/gsFyE3n-Cso" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Night Gas Station Twister</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/sUjRvGuWips" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Store</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/UgzxhXxb54o" frameborder="0" allowfullscreen></iframe>`,
+],
+ElRinoTornado : [
+`<h2>Car 1</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/MxgU1QcFMJM" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Car 2</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/3SP5VSwUNDQ" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Car 3</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/ziZNsproDzs" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Car 4</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDl3kVRrNd0" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Car 5</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/Noea6OfV_58" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Mike Bettes Before</h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/m4WfuhUrWHs
+" frameborder="0" allowfullscreen></iframe>`,
+`<h2>Mike Bettes Impact </h2> <iframe width="560" height="315" src="https://www.youtube.com/embed/dxiqNXcSLsQ" frameborder="0" allowfullscreen></iframe>`
+]
+};
+    document.getElementById("test").innerHTML = obj[argument];
+
+}
+
+</script>
+</html>
