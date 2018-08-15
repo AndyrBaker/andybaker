@@ -34,7 +34,7 @@ border:none;
 display:none; 
 }
 
-@media (max-device-width: 1200px) {
+@media (max-device-width: 1020px) {
  body{
  background-color:white;
  background-image:none; 
@@ -44,6 +44,10 @@ display:none;
  font-size:7em; 
  letter-spacing:.1em;
  margin-top:.2em; 
+ }
+ ul{
+ 	text-align: left;
+ 	font-size: 2.5em;
  }
  #desktop{
  display:none; 
