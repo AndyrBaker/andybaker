@@ -45,7 +45,7 @@ display:none;
  letter-spacing:.1em;
  margin-top:.2em; 
  }
- .desktop{
+ #desktop{
  display:none; 
  }
  #mobile{
