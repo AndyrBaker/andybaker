@@ -4,17 +4,25 @@
     <script src="https://api4.windy.com/assets/libBoot.js"></script>
   	<style>
       body{
-        display: flex;
+        display: block;
+        background-color: #2d2d2d;
       }
   		#windy {
   			width: 100%;
   			height: 50rem;
   		}
-  	</style>
+      h1{
+        font-family: helvetica;
+        font-weight:300;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+      }
+  </style>
   </head>
   <body>
     <div id="windy"></div>
-
+    <h1>Yo this Windy.tv API is off the chain</h1>
     <script>
 
     const options = {
@@ -43,7 +51,7 @@
             .setLatLng([38.779390,-90.481344])
             .setContent("Aw yis")
             .openOn( map );
-    
+
     })
 
     </script>
