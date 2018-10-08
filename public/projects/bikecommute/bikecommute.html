@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bike Commute</title>
+<style type="text/css">
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+body {
+ margin: 0;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ align-content:center;
+ align-items:center;
+}
+#BikeChart{
+ font-family:helvetica;
+ font-weight:bold;
+ text-align:center;
+ color:#141414;
+ min-width:50%;
+ max-width:80%;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ align-content:center;
+ align-items:center;
+}
+#countdowns{
+ border-radius:3%;
+ padding:3%;
+}
+#counter{
+/*--  container styling --*/
+ background-color:black;
+ color:white;
+ border-radius:5px;
+ padding-left:4%;
+ padding-right:4%;
+/*-- Font styling --*/
+ letter-spacing: -2px;
+ text-align:center;
+ font-family:helvetica;
+ font-weight:bold;
+ font-size:3em;
+}
+h1{
+ font-weight:bolder;
+ font-size:4em;
+ font-family:arial;
+ margin-bottom:2%;
+ line-height:.8;
+}
+h4{
+ font-weight:300;
+ font-size:.9em;
+ text-align:center;
+}
+p{
+ color:black;
+}
+</style>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="BikeChart">
+ <h1>
+  Andy's<br>
+  Commute<br>
+  Countdown
+ </h1>
+ <div id="countdowns">
+  <p>
+   Commutes to remaining cost after birthday money.
+  </p>
+  
+  <span id="counter">
+
+   30
+
+  </span>
+
+  <p>
+   Commutes to cover total cost
+  </p>
+
+  <span id="counter">         
+
+   140
+
+  </span>
+  <h4>
+ This charts how many times Andy needs to ride to work to make up the cost of the bike he got.
+ </h4> 
+ <h4> 
+  Each ride saves roughly $9 compared to driving his car, excluding the insurance. 
+ </h4>
+ </div> 
+</div> 
+</body>
+</html>
