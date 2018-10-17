@@ -1,0 +1,58 @@
+<!-- NEED TO INSTALL BABBLE TO MAKE THIS WORK -->
+
+
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>clock | andyrossbaker.com</title>
+</head>
+<style type="text/css">
+
+html, body {
+  width:100%;
+  height:100%;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+body{
+background-color:black;
+color:grey; 
+font-family:helvetica; 
+display:flex;
+justify-content:center; 
+align-content:center;
+align-items:center;
+font-size:4rem;
+}
+
+</style>
+
+<body>
+	 <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+	 <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+	 <div id="root">
+	  <!-- This element's contents will be replaced with your component. -->
+	</div>
+	<script type="text/javascript">
+
+// Code used from https://reactjs.org/docs/state-and-lifecycle.html
+
+function tick() {
+  const element = (
+    <div>
+      <h2>{new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1000);
+	
+
+</script>
+</body>
+</html>

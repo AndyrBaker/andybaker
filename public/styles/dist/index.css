@@ -1,14 +1,27 @@
 body,h1{font-weight:300}
-a,h1{color:#2c3e50}
-body{background-color:#F1F1F1;background-image:url(/img/Sandia.jpg);background-repeat:no-repeat;background-size:cover;font-family:helvetica,arial,san-serif;display:block;text-align:right}
-h1{letter-spacing:.4em;margin-top:2.5em;margin-right:1em}
-ul{list-style-type:none;margin-right:3em}
+a,h1{color:#fff}
+body{background-color:#F1F1F1;background-image:url(/img/Sandia.jpg);background-repeat:no-repeat;background-size:cover;font-family:helvetica,arial,san-serif;display:flex;align-items:center;justify-content:center;flex-direction:column}
+body,html{width:100%;height:100%;margin:0;border:0;outline:0}
+h1{letter-spacing:.4em}
+ul{list-style-type:none;text-align:center}
+li{margin-top:.5rem}
 a{text-decoration:none;target:_blank}
 a:hover{color:#e74c3c}
-button{font-size:1.4em;display:inline;border:none}
+.luke_I_am_your_fader{-webkit-animation:fadein 4s;-moz-animation:fadein 4s;-ms-animation:fadein 4s;-o-animation:fadein 4s;animation:fadein 4s}
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+@-moz-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
 #mobile{display:none}
-@media (max-device-width:1200px){body{background-color:#fff;background-image:none}
-h1{color:#e74c3c;font-size:7em;letter-spacing:.1em;margin-top:.2em}
+@media (max-device-width:1200px){a,h1{color:#fff}
+body{background-image:url(/img/NMyo.png);background-repeat:no-repeat;background-size:cover}
+h1{font-size:7em;letter-spacing:.1em;margin-top:.2em}
+a{font-size:4em}
 #desktop{display:none}
-#mobile{display:block;font-size:4.5em}
+#mobile{display:block}
 }
