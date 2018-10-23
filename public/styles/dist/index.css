@@ -17,11 +17,5 @@ to{opacity:1}
 @-webkit-keyframes fadein{from{opacity:0}
 to{opacity:1}
 }
-#mobile{display:none}
-@media (max-device-width:1200px){a,h1{color:#fff}
-body{background-image:url(/img/NMyo.png);background-repeat:no-repeat;background-size:cover}
-h1{font-size:7em;letter-spacing:.1em;margin-top:.2em}
-a{font-size:4em}
-#desktop{display:none}
-#mobile{display:block}
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2){#mobile{display:none;background-image:none}
 }
