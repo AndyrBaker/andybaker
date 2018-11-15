@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bike Commute</title>
+<style type="text/css">
+  
+  #ipad_landscape{
+    display: none;
+  }
+    #ipad_portrait{
+      display: none;
+  }
+    #notipad{
+    display: inline-flex;
+    background-color: red;
+  }
+
+
+  /* Portrait and landscape iPad Pro */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+   body {
+   background-color:blue;
+  }
+}
+ 
+/* Portrait iPad Pro */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+ and (orientation: portrait){
+   body{
+   background-color:red;
+  }
+  #ipad_landscape{
+    display: none;
+  }
+    #ipad_portrait{
+      display: inline-flex;
+  }
+    #notipad{
+    display: none;
+  }
+}
+
+ 
+/* Landscape iPad Pro */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+ and (orientation: landscape){
+  body{
+   background-color:goldenrod;
+  }
+    #ipad_landscape{
+    display: inline-flex;
+  }
+    #ipad_portrait{
+      display: none;
+  }
+  #notipad{
+    display: none
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 id="ipad_landscape">
+  Hey yall this is an ipad pro landscape media queiry
+</h1> 
+<h1 id="ipad_portrait">
+  Hey yall this is an ipad pro portrait media queiry
+</h1> 
+<h1 id="notipad">
+  You not on an ipad pro
+</h1>   
+
+</body>
+</html>
