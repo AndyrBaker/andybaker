@@ -1,8 +1,3 @@
-body{
-background-image:url("/img/NM.jpg");
-background-repeat:no-repeat;
-background-size: cover;
-}
 html {
  box-sizing: border-box;
 }
@@ -26,4 +21,8 @@ html {
 }
 a:hover{
   color:red;
+}
+// things page specific
+ .things{
+display:block; 
 }
