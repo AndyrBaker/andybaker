@@ -4,25 +4,28 @@ html {
 *, *:before, *:after {
  box-sizing: inherit;
 }
+body {
+background-image: url("/img/NM.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+font-family:helvetica;
+font-weight:300;
+color:white;
+}
  .THECONTAINER {
-  display:flex;
-  align-items:center;
   justify-content:center;
   flex-direction:column;
+  align-items:center;
   height:100vh;
-  font-family:helvetica;
-  font-weight:300;
+  display:flex;
  }
  a{
  text-decoration:none;
- color:black;
- display:block;
  text-align:center;
+ display:block;
+ color:white;
 }
 a:hover{
-  color:red;
-}
-// things page specific
- .things{
-display:block; 
+  color:#f3bf72;
 }

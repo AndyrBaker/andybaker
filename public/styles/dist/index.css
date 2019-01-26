@@ -1,4 +1,4 @@
-body{background-image:url(/img/NM.jpg);background-repeat:no-repeat;background-size:cover}
+body{background-image:url "/img/NM.jpg";background-repeat:no-repeat;background-size:cover}
 html{box-sizing:border-box}
 *,:after,:before{box-sizing:inherit}
 .THECONTAINER{display:flex;align-items:center;justify-content:center;flex-direction:column;height:100vh;font-family:helvetica;font-weight:300}
