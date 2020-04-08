@@ -9,33 +9,22 @@ background-image: url("/img/NM.jpg");
 background-repeat:no-repeat;
 background-position:center;
 background-size: cover;
-font-family:helvetica;
-font-weight:300;
-color:white;
 }
 .THECONTAINER {
-justify-content:center;
-flex-direction:column;
-align-items:center;
-height:100vh;
-display:flex;
-padding-right:50%;
-}
-h1{
-font-size:2.5em;	
-}
-a{
-font-size:1.2em;	
-text-decoration:none;
-text-align:center;
-display:block;
-color:white;
-}
-a:hover{
-color:#f3bf72;
-}
-@media only screen and (max-width: 800px) {
-  .THECONTAINER {
-    padding-right:0;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  height:100vh;
   }
-}
+  svg{
+  max-width:30%;
+  fill:white;
+  }
+  a{
+  opacity:0;
+  }
+  a:hover{ 
+  fill:black;
+  opacity:1.0;
+  }
