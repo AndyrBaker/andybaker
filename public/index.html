@@ -4,56 +4,56 @@
  <title>home | andyrossbaker.com</title>
 </head>
 <style>
-/* Keep it simple, keep it updateable */
+/* Keep it simple, keep it safe */
 
 /* color brought to you by: https://flatuicolors.com/ */
 /* flexbox reference I love is: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
     html {
-    box-sizing: border-box;
+     box-sizing: border-box;
     }
     *, *:before, *:after {
-    box-sizing: inherit;
+     box-sizing: inherit;
     }
     body {
-    background-image: url("/img/NM.jpg");
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size: cover;
-    background-color:#2c3e50;
-    font-family:helvetica, Comic Sans MS, Arial;
+     background-image: url("/img/NM.jpg");
+     background-repeat:no-repeat;
+     background-position:center;
+     background-size: cover;
+     background-color:#2c3e50;
+     font-family:helvetica, Comic Sans MS;
     }
     .THEBIGBADCONTAINER {
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items:center;
-    height:100vh;
+     display:flex;
+     justify-content:center;
+     flex-direction:column;
+     align-items:center;
+     height:100vh;
     }
-
-    a{
-    color:white;
-    font-weight:300;
-    text-decoration:none;
+    h1{
+     font-size:2rem;
+     font-weight:500;
+     letter-spacing:.4rem;
+     color:white;
     }
-    a:hover{ 
-    color:#e67e22;
+    a {
+     text-decoration:none;
+     font-weight:300;
+     font-size:1.5rem;
+     line-height:2rem;
+     letter-spacing:.2rem;
+     color:white; 
+    }
+    a:hover { 
+     color:#e67e22;
     } 
-    @media only screen and (max-width: 700px) {
-    svg{
-    max-width:90%;   
-    margin-right:initial;
-    }
-    }
 </style>
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <div class="THEBIGBADCONTAINER"> 
             <h1>Andrew Baker</h1>
-        <!-- Big forest -->
-            <a href="https://www.bigforest.pictures/" target="_blank"><rect y="105.7" width="344.7" height="27.2"/>Bigforest</a>
-        <!-- Other things -->
-            <a href="/projects/_things/things.html"><rect y="132.9" width="344.7" height="47.1"/>Things</a>
+             <a href="https://www.bigforest.pictures/" target="_blank"><rect y="105.7" width="344.7" height="27.2"/>Big Forest</a>
+             <a href="/projects/_things/things.html"><rect y="132.9" width="344.7" height="47.1"/>Things</a>
         </div>	
     </body>
 </html>
