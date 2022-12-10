@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/AndyrBaker/andybaker",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gulp-update": "0.0.2"
   },
   "devDependencies": {
